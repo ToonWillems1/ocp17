@@ -1,35 +1,22 @@
 package exceptions;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-
 public class TryWithResources {
-    public void readFile(String file){
-        try( FileInputStream is = new FileInputStream("myfile.txt")){
-            //read data file
-        } catch(IOException e){
-            e.printStackTrace();
+    public static void main(String... xyz) {
+        try (MyFileClass bookReader = new MyFileClass(1); MyFileClass movieReader = new MyFileClass(2)){
+            System.out.println("Try Block");
+            throw new RuntimeException();
+        } catch (Exception e) {
+            System.out.println("Catch Block");
+        } finally {
+            System.out.println("Finally Block");
         }
     }
 }
 
-/* THE ABOVE CODE DOES THE SAME AS CODE BELOW
- * 
- * public void readFile(String file){
- *    FileInputStream is = null;
- *    try{
- *       is = new FileInputStream("myfile.txt");
- *       //read data file 
- *    } catch(IOException e){
- *       e.printStackTrace();
- *    } finally {
- *       if(is != null){
- *          try {
- *              is.close();
- *          } catch(IOException e2) {
- *              e2.printStackTrace();
- *          }
- *       }
- *    }
- * }
- */
+class MyFileClass implements AutoCloseable {
+    private final int num;
+    public MyFileClass(int num) {this.num = num; }
+    @Override public void close(){
+        System.out.println("Closing: " + num);
+    }
+}
