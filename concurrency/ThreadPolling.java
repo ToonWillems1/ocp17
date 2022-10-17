@@ -19,3 +19,18 @@ public class ThreadPolling {
         System.out.println("Reached: "+ counter);
     }
 }
+
+/*Concurrency API method for this code
+ *  ExecutorService service = Executors.newSingleThreadExecutor();
+ *  try {
+ *      Future<?> result = service.submit(() -> {
+ *          for(int i = 0; i < 1_000_000; i++) counter++;
+ *      });
+ *      result.get(10, TimeUnit.SECONDS);
+ *      System.out.println("Reached!");
+ *   } catch (TimeoutException e) {
+ *      System.out.println("Not reached in time");
+ *   } finally {
+ *      service.shutdown
+ *   } 
+ */
