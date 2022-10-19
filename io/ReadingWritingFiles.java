@@ -14,6 +14,8 @@ import java.util.List;
 
 
 public class ReadingWritingFiles {
+    //reading & writing files methods
+
     void copyStream(InputStream in, OutputStream out) throws IOException{
         int batchSize = 1024;
         var buffer = new byte[batchSize];
@@ -30,7 +32,7 @@ public class ReadingWritingFiles {
             String line = null;
             while((line = reader.readLine()) != null){
                 writer.println(line);
-                writer.close(); // close needed to solve data leak
+                writer.close(); // close needed to solve resource leak
             }
         }
     }
