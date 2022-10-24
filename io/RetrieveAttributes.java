@@ -1,4 +1,4 @@
-package turtles;
+package io;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,7 +8,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 
 public class RetrieveAttributes {
     public static void main(String[] args) {
-        var path = Paths.get("turtles/sea.txt");
+        var path = Paths.get("io/sea.txt");
       
       try {
          BasicFileAttributes data = Files.readAttributes(path, BasicFileAttributes.class);
