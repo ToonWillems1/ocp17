@@ -8,8 +8,8 @@ public class FunctionMethod {
         Function<String, Integer> f1 = String::length; //method ref
         Function<String, Integer> f2 = k -> k.length(); //lambda
 
-        System.out.println(f1.apply("Bock bock")); //9
-        System.out.println(f2.apply("Bweek")); //5
+        System.out.println(f1.apply("Bock bock")); //9 (length of String)
+        System.out.println(f2.apply("Bweek")); //5 (length of String)
 
         BiFunction<String, String, String> b1 = String::concat;
         BiFunction<String, String, String> b2 = (k, v) -> k.concat(v);
