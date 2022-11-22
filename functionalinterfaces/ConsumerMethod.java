@@ -13,13 +13,13 @@ public class ConsumerMethod {
         c2.accept(name2);
     }
 
-    public static void BiConsumers(String name1, Integer int1, String name2, Integer int2){
+    public static void BiConsumers(String name1, Integer age1, String name2, Integer age2){
         var map = new HashMap<String, Integer>();
         BiConsumer<String, Integer> b1 = map::put;
         BiConsumer<String, Integer> b2 = (k, v) -> map.put(k, v);
 
-        b1.accept(name1, int1);
-        b2.accept(name2, int2);
+        b1.accept(name1, age1);
+        b2.accept(name2, age2);
         System.out.println(map);
     }
     
