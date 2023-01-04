@@ -11,8 +11,9 @@ public class CollectStreams{
       Set<String> set = stream.collect(Collectors.toSet());
       System.out.println(set); //f, w, l, o usually
 
+      Stream<String> stream2 = Stream.of("w", "o", "l", "f");
       TreeSet<String> set2 = 
-         stream.collect(Collectors.toCollection(TreeSet::new));
+         stream2.collect(Collectors.toCollection(TreeSet::new));
          System.out.println(set2); //f, l, o, w
    }
 }

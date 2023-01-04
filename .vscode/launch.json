@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StreamPipeline",
+            "request": "launch",
+            "mainClass": "streams.StreamPipeline",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch StreamMatching",
+            "request": "launch",
+            "mainClass": "streams.StreamMatching",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintStreams",
+            "request": "launch",
+            "mainClass": "streams.PrintStreams",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch CollectStreams",
+            "request": "launch",
+            "mainClass": "streams.CollectStreams",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch FilterStreams",
+            "request": "launch",
+            "mainClass": "streams.FilterStreams",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleExample",
+            "request": "launch",
+            "mainClass": "primitivestreams.SimpleExample",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch OptionalPrimitiveStream",
+            "request": "launch",
+            "mainClass": "primitivestreams.OptionalPrimitiveStream",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
             "name": "Launch Test",
             "request": "launch",
             "mainClass": "Test",

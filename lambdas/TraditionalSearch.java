@@ -10,7 +10,8 @@ public class TraditionalSearch {
         animals.add(new Animal("rabbit", true, false));
         animals.add(new Animal("turtle", false, true));
 
-        print(animals, a -> a.canSwim()); //a -> a.canSwim() and (Animal a) -> {return a.canHop();} do exactly the same thing.   Animal::canSwim is the method reference version
+        print(animals, a -> a.canSwim()); //(Animal a) -> {return a.canHop();} does exactly the same thing.   
+                                          //Animal::canSwim is the method reference version
     }
 
     private static void print(List<Animal> animals, CheckTrait checker){
