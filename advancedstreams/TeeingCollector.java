@@ -10,7 +10,7 @@ public class TeeingCollector {
         Seperations result = list.stream()
             .collect(Collectors.teeing(
                 Collectors.joining(" "),
-                Collectors.joining(" ,"),
+                Collectors.joining(", "),
                 (s,c) -> new Seperations(s, c)));
         System.out.println(result);
     }

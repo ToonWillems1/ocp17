@@ -4,7 +4,7 @@ import java.util.Optional;
 
 public class ChainingOptionals {
     
-    //this is non runnable code, just a verbose method rewritten as a stream
+    //this is non executable code, just a verbose method rewritten as a stream
     //mainloop below is written so IDE doesn't complain
     public static void main(String[] args) {
         threeDigit(Optional.empty());

@@ -10,7 +10,7 @@ public class Lion extends Animal {
     }
     public static void main(String[] args) {
         var lion = new Lion();
-        lion.setProperties(3, "kion");
+        lion.setProperties(3, "Lion");
         lion.roar();
     }
 }

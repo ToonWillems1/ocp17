@@ -6,6 +6,146 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch UsingSpliterator",
+            "request": "launch",
+            "mainClass": "advancedstreams.UsingSpliterator",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TeeingCollector",
+            "request": "launch",
+            "mainClass": "advancedstreams.TeeingCollector",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChainingOptionals",
+            "request": "launch",
+            "mainClass": "advancedstreams.ChainingOptionals",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lion",
+            "request": "launch",
+            "mainClass": "classes.Lion",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListFactory",
+            "request": "launch",
+            "mainClass": "collections.ListFactory",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Duck",
+            "request": "launch",
+            "mainClass": "comparables.Duck",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Animal",
+            "request": "launch",
+            "mainClass": "comparables.Animal",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadSleep",
+            "request": "launch",
+            "mainClass": "concurrency.ThreadSleep",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadSafety",
+            "request": "launch",
+            "mainClass": "concurrency.ThreadSafety",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadPolling",
+            "request": "launch",
+            "mainClass": "concurrency.ThreadPolling",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TaskOrchestrator",
+            "request": "launch",
+            "mainClass": "concurrency.TaskOrchestrator",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch DeadlockProblem",
+            "request": "launch",
+            "mainClass": "concurrency.DeadlockProblem",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch BasicThreading",
+            "request": "launch",
+            "mainClass": "concurrency.BasicThreading",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TryWithResources",
+            "request": "launch",
+            "mainClass": "exceptions.TryWithResources",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintException",
+            "request": "launch",
+            "mainClass": "exceptions.PrintException",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch FormattingDataTime",
+            "request": "launch",
+            "mainClass": "formattingvalues.FormattingDataTime",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch BoundedClass",
+            "request": "launch",
+            "mainClass": "generics.BoundedClass",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch RetrieveAttributes",
+            "request": "launch",
+            "mainClass": "io.RetrieveAttributes",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch CommitAndRollback",
+            "request": "launch",
+            "mainClass": "jdbc.CommitAndRollback",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortRabbits",
+            "request": "launch",
+            "mainClass": "sortedsearching.SortRabbits",
+            "projectName": "OCP_e45e4e9e"
+        },
+        {
+            "type": "java",
             "name": "Launch StreamPipeline",
             "request": "launch",
             "mainClass": "streams.StreamPipeline",

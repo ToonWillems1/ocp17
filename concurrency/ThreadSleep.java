@@ -11,7 +11,7 @@ public class ThreadSleep {
     public static void main(String[] unused) {
         var job = new Thread(() -> pause());
 
-        job.start();  //.setDaemon(true) would never print the thred finished statement
+        job.start();  //.setDaemon(true) would never print the thread finished statement
         System.out.println("Main method finished!");
     }
 }
